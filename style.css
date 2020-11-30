@@ -72,5 +72,15 @@ img {
     cursor: pointer;
 }
 
+/** cover */ 
 
+.cover {
+    padding-top: 60px;
+}
 
+.cover-items .study-image {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2013/02/cyberlocks-730x422.jpg");
+    width: 720px;
+    height: 422px;
+    background-size: cover;
+}
