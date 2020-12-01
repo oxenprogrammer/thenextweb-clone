@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Teko:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>TNW</title>
+  </head>
+>>>>>>> 7e0a806734f503874dc5a634d1b2e8a5db3b48cb
 
 <head>
   <meta charset="UTF-8" />
@@ -62,53 +77,56 @@
     </nav>
     <section class="cover block">
       <article class="cover-items">
-        <div class="study-image background cover-images"></div>
-        <div class="article-gradient block"></div>
-        <!-- <div><img src="" alt="logo" /></div> -->
-        <div class="date">Monday - November 30, 2020</div>
+        <div class="image-container">
+          <div class="cover-image study"></div>
+          <div class="cover-gradient block">
+            <div class="date">Monday - November 30, 2020</div>
+          </div>
+        </div>
         <header class="cover-item-title">
-          <h2 class="article-section">
-          </h2>
-          <h4 class="article-title">Study: Security flaw could allow hackers to trick lab
-            scientists into making viruses</h4>
-          <ul>
-            <li>By Tristan Greene</li>
+          <h2 class="article-section">GEAR</h2>
+          <h4 class="article-title">
+            Study: Security flaw could allow hackers to trick lab scientists
+            into making viruses
+          </h4>
+          <ul class="article-info">
+            <li>By <a class="author-link" href="#">Tristan Greene</a></li>
             <li><i class="far fa-clock"></i>1 hour ago</li>
             <li><i class="fas fa-share-alt"></i>6</li>
           </ul>
         </header>
       </article>
       <article class="cover-items">
-        <div>
-          <img src="" alt="cover1" />
+        <div class="image-container">
+          <div class="cover-image cloud"></div>
+          <div class="cover-gradient block"></div>
         </div>
-        <div class="article-gradient"></div>
-        <header>
-          <h2 class="article-section">
-            <a href="#">h2 link</a>
-          </h2>
-          <h4 class="itlearticle-t">H4</h4>
-          <ul>
-            <li>author</li>
-            <li><i class="far fa-clock"></i></li>
-            <li>author</li>
+        <header class="cover-item-title">
+          <h2 class="article-section">TECH</h2>
+          <h4 class="article-title">
+            Can we really trust the Cloud with our data?
+          </h4>
+          <ul class="article-info">
+            <li>By <a class="author-link" href="#">Tony Sekinah</a></li>
+            <li><i class="far fa-clock"></i>1 hour ago</li>
+            <li><i class="fas fa-share-alt"></i>2</li>
           </ul>
         </header>
       </article>
       <article class="cover-items">
-        <div>
-          <img src="" alt="cover1" />
+        <div class="image-container">
+          <div class="cover-image javascript"></div>
+          <div class="cover-gradient block"></div>
         </div>
-        <div class="article-gradient"></div>
-        <header>
-          <h2 class="article-section">
-            <a href="#">h2 link</a>
-          </h2>
-          <h4 class="itlearticle-t">H4</h4>
-          <ul>
-            <li>author</li>
-            <li><i class="far fa-clock"></i></li>
-            <li>author</li>
+        <header class="cover-item-title">
+          <h2 class="article-section">TECH</h2>
+          <h4 class="article-title">
+            4 JavaScript tools to clean up your dirty code
+          </h4>
+          <ul class="article-info">
+            <li>By <a class="author-link" href="#">Live Code Stream</a></li>
+            <li><i class="far fa-clock"></i>1 hour ago</li>
+            <li><i class="fas fa-share-alt"></i>4</li>
           </ul>
         </header>
       </article>
@@ -233,13 +251,49 @@
                 <h4>$700k</h4>
                 <h5>Seed fund</h5>
               </div>
-            </a>
-            <div>
+            </li>
+          </ul>
+        </section>
+        <section class="latest-funding">
+          <header>
+            <h2>
+              <a href="#">Latest funding rounds on Index.co ></a>
+            </h2>
+            <a href="#">See more</a>
+            <a href="#">Get updates by email</a>
+            <a href="#">Add info</a>
+          </header>
+          <div class="funding-container">
+            <div class="funding-item">
               <a href="#">
-                <i class="fas fa-tag"></i>
+                <h4 class="fund-item-titles">Infogrid</h4>
+                <img src="" alt="clicky" />
+                <div>
+                  <h4>$15.5M</h4>
+                  <h5>SERIES A</h5>
+                </div>
               </a>
+              <div>
+                <a href="#">
+                  <i class="fas fa-tag"></i>Information Technology, +2
+                </a>
+                <a href="#">
+                  <i class="fas fa-briefcase"></i>Northzone 
+                </a>
+              </div>
+              <div class="fund-item-text">
+                Infogrid raises $15.5M from Northzone to retrofit buildings with 'smart' IoT
+                <a href="">on TechCrunch</a>
+              </div>
+            </div>
+            <div class="funding-item">
               <a href="#">
-                <i class="fas fa-briefcase"></i>
+                <h4 class="fund-item-titles">Tazapay</h4>
+                <img src="" alt="clicky" />
+                <div>
+                  <h4>$3.2M</h4>
+                  <h5>VENTURE CAPITAL</h5>
+                </div>
               </a>
             </div>
             <div class="fund-item-text">
@@ -252,14 +306,41 @@
               <h4 class="fund-item-titles">CLICKY</h4>
               <img src="" alt="clicky" />
               <div>
-                <h4>$700k</h4>
-                <h5>Seed fund</h5>
+                <a href="#">
+                  <i class="fas fa-tag"></i>Financial Services
+                </a>
+                <a href="#">
+                  <i class="fas fa-briefcase"></i>Surge
+                </a>
               </div>
-            </a>
-            <div>
+              <div class="fund-item-text">
+                Tazapay snags US$3.2M to expand cross-border SMB commerce platform in Southeast Asia | e27
+                <a href="#">on e27: Asia tech news</a>
+              </div>
+            </div>
+            <div class="funding-item">
               <a href="#">
-                <i class="fas fa-tag"></i>
+                <h4 class="fund-item-titles">CLICKY</h4>
+                <img src="" alt="clicky" />
+                <div>
+                  <h4>$700k</h4>
+                  <h5>SEED FUND</h5>
+                </div>
               </a>
+              <div>
+                <a href="#">
+                  <i class="fas fa-tag"></i>E-Commerce, +2
+                </a>
+                <a href="#">
+                  <i class="fas fa-briefcase"></i>Asif Keshodia
+                </a>
+              </div>
+              <div class="fund-item-text">
+                Pakistani fashion e-commerce startup Clicky.pk attracts USD 700,000 in Pre-Series A funding round
+                <a href="#">on Tech Juice</a>
+              </div>
+            </div>
+            <div class="funding-item">
               <a href="#">
                 <i class="fas fa-briefcase"></i>
               </a>
