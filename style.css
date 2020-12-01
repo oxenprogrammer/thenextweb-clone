@@ -15,6 +15,15 @@ img {
     height: auto;
 }
 
+ul {
+    list-style-type: none
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /** global rules */
 
 .background {
@@ -37,7 +46,7 @@ img {
 /** nav mobile */
 .mobile-nav {
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     height: 48px;
     background-color: #fff;
@@ -82,16 +91,89 @@ img {
     padding-top: 60px;
 }
 
-.cover-items .cover-image {
-    background-image: -webkit-gradient(rgba(0,0,0,0,9),rgba(0,0,0,0.5));
-    background-image: -moz-linear-gradient(rgba(0,0,0,0,9),rgba(0,0,0,0.5));
-    background-image: linear-gradient(rgba(0,0,0,0,9),rgba(0,0,0,0.5));
-    width: 100%;
-    height: 220px;
-}   
-
-.cover-items .study-image {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2013/02/cyberlocks-730x422.jpg");
-    width: 100%;
-    height: 220px;
+.cover-items {
+    position: relative;
+    padding: 4px;
 }
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height:220px;
+}
+
+.cover-items .image-container {
+    transition: background-color .4s ease;
+    cursor: pointer;
+}
+
+.cover-items .cover-image {
+    width: 100%;
+    height: 220px;
+    z-index: 1;
+}
+
+.cover-items .study {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2013/02/cyberlocks-730x422.jpg"); 
+}
+
+.cover-items .cloud {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Untitled-design-3-1-796x417.png"); 
+}
+
+.cover-items .javascript {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/1-copy-1-796x417.jpg");
+}
+
+.cover-gradient {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9));
+    width: 100%;
+    height: 220px;
+    position: absolute; 
+    top: 0px;
+    z-index: 2;
+}
+
+.cover-items .cover-item-title {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.cover-item-title h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.cover-item-title h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.cover-item-title ul {
+    color: hsla(0,0%,100%,.6);
+    font-size: 1.2rem;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5rem;
+}
+
+.cover-item-title .author-link:hover {
+    color: #eee;
+}
+
+.cover-item-title i {
+    padding: 0.5rem 0.5rem;
+}
+
+.cover-item-title .article-info {
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+}
+
