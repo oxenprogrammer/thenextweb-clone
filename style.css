@@ -21,13 +21,13 @@ ul li {
   list-style-type: none;
 }
 
+ul {
+  list-style-type: none
+}
+
 img {
   max-width: 100%;
   height: auto;
-}
-
-ul {
-    list-style-type: none
 }
 
 a {
@@ -57,6 +57,7 @@ a {
 /** nav mobile */
 .mobile-nav {
     position: fixed;
+    top: 0;
     z-index: 100;
     width: 100%;
     height: 48px;
@@ -198,12 +199,16 @@ a {
     flex-direction: column;
 }
 
-.latest h2 a {
+.wrapper .orange-title {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   color: #f42;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.3rem;
 }
+
+.wrapper .orange-title:hover {
+    color: #000;
+  }
 
 .story {
   margin-bottom: 1rem;
@@ -266,3 +271,92 @@ a {
   color: rgb(31, 29, 29);
 }
 
+/* Latest funding */
+
+.latest-funding {
+    font-size: 1.6rem;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 8px;
+    margin: 8px;
+}
+
+.latest-funding header{
+    flex-direction: column;
+
+}
+
+.latest-funding .header-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  font-weight: 100;
+  padding-top: 1.3rem;
+  line-height: 0;
+}
+
+.funding-container {
+  flex-flow: wrap;
+}
+
+.funding-item {
+  padding: 8px 0;
+  margin: 0.5rem 0;
+}
+
+.funding-item .funding-header {
+  background: rgba(255,68,34,.08);
+  height: 9rem;
+}
+
+.funding-item .fund-item-titles {
+  background: #f42;
+  color: #fff;
+  padding: 1rem 1.5rem 1rem 7.5rem;
+}
+
+.funding-item .funding-logo {
+  width: 60px;
+  height: 60px;
+  max-width: 60px;
+  max-height: 60px;
+  margin: 1rem;
+  z-index: 5;
+  position: relative;
+  top: -43px;
+}
+
+.funding-item .funding-money {
+  position: relative;
+  top: -7rem;
+  left: 7.5rem;
+  height: auto;
+}
+
+.funding-item .funding-money h5 {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #555;
+}
+
+.funding-item .fund-item-text {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.funding-item .funding-tags i {
+  padding-right: 1rem;
+  color: #000;
+}
+
+.funding-item .funding-tags {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  line-height: 2rem;
+  border-bottom: 1px solid rgba(255, 67, 34, 0.589);
+  margin-bottom: 1.5rem;
+}
+
+.funding-item .funding-tags a:hover {
+  color: #000;
+}
