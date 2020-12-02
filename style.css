@@ -136,7 +136,7 @@ img {
 .top-menu {
   justify-content: space-between;
   align-items: center;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 1.5rem;
   line-height: 3.5rem;
   color: #555;
@@ -719,7 +719,7 @@ img {
     display: none;
   }
 
-  /* cover */ 
+  /* cover */
 
   .cover {
     grid-template-columns: auto auto auto;
@@ -727,9 +727,9 @@ img {
     margin: 1rem;
   }
 
-   .cover-one {
+  .cover-one {
     grid-column: 1/3;
-    grid-row: 1/ span 3;
+    grid-row: 1 / span 3;
   }
 
   .cover-one .date {
@@ -739,7 +739,6 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     color: #fff;
-
   }
   .cover-one .study {
     height: 448px;
@@ -747,7 +746,10 @@ img {
 
   .cover-one .cover-gradient {
     height: 448px;
-    background-image: linear-gradient(rgba(235, 15, 15, 0.842), rgba(0, 0, 0, 0.952))
+    background-image: linear-gradient(
+      rgba(235, 15, 15, 0.842),
+      rgba(0, 0, 0, 0.952)
+    );
   }
 
   .cover-one .article-title {
@@ -768,7 +770,7 @@ img {
     width: auto;
   }
 
-  /** wrapper */ 
+  /** wrapper */
 
   .wrapper {
     margin: 2rem 20rem;
@@ -790,5 +792,4 @@ img {
     height: 20rem;
     margin-bottom: 1rem;
   }
-  
 }
