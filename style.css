@@ -1,5 +1,5 @@
 /** General rules */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Teko:wght@300;500&family=Ubuntu:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Teko:wght@300;500&family=Ubuntu:wght@500&display=swap");
 
 * {
   padding: 0;
@@ -16,6 +16,7 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
 
 ul li {
@@ -29,15 +30,6 @@ ul {
 img {
   max-width: 100%;
   height: auto;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 /** global rules */
@@ -150,7 +142,7 @@ a {
   width: 100%;
   height: 220px;
   position: absolute;
-  top: 0px;
+  top: 0;
   z-index: 2;
 }
 
@@ -212,6 +204,13 @@ a {
 
 .latest h2 a,
 .technology-item h2 a {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #f42;
+  margin-bottom: 1.3rem;
+}
+
+.wrapper .orange-title {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   color: #f42;
@@ -283,7 +282,7 @@ a {
 
 .story .python {
   background-image: url("https://cdnp1.stackassets.com/4c6357549bbe196eac7a2a550f3cf2a380f39e44/store/7d5851d962ea8a62a7e9939f0efebc686b69d83821b63060d3109048021b/sale_19399_primary_image.jpg");
-} 
+}
 
 .story .ai {
   background-image: url("https://cdnp3.stackassets.com/fa74fc0ae00dca34fbe6bbeede760a176caf0a21/store/eb873f170e9b4a3722fb708fd8b520072c6a2de5201831f5310bb9030132/sale_48032_primary_image.jpg");
@@ -362,6 +361,7 @@ a {
 .styled-list li {
   margin-bottom: 1rem;
 }
+
 /* Latest funding */
 
 .latest-funding {
@@ -389,7 +389,6 @@ a {
 
 .funding-item {
   padding: 8px 0;
-  margin: 0.5rem 0;
 }
 
 .funding-item .funding-header {
@@ -451,8 +450,7 @@ a {
   color: #000;
 }
 
-
-/* footer */ 
+/* footer */
 
 .footer {
   width: 100%;
@@ -465,7 +463,7 @@ a {
 .footer-wrapper {
   flex-direction: column;
   justify-content: center;
-  padding: 2rem
+  padding: 2rem;
 }
 
 .footer-links-social {
@@ -474,9 +472,11 @@ a {
   margin: 2rem 0;
 }
 
-.footer-links-social i {
+.footer-links-social .fab,
+.footer-links-social .fas,
+.footer-links-social .far {
   padding: 1rem;
-  margin: 0.3rem 0.4rem;
+  margin: 0.3rem;
   font-size: 1.5rem;
   color: #fff;
   border: 2px solid #333;
@@ -484,7 +484,9 @@ a {
   background-color: #333;
 }
 
-.footer-links-social i:hover {
+.footer-links-social .fab:hover,
+.footer-links-social .fas:hover,
+.footer-links-social .far:hover {
   background-color: #000;
 }
 
@@ -495,13 +497,13 @@ a {
 .footer-menu li {
   padding: 0 1rem;
   font-family: "Teko", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 300;
   color: #aaa;
 }
 
 .footer-menu li:hover {
-  color: #fff
+  color: #fff;
 }
 
 .footer-legal {
@@ -518,13 +520,12 @@ a {
   justify-content: center;
   padding: 3rem;
 }
-.legal-wrapper img {
+
+.legal-wrapper .logo-footer {
   height: 1.8rem;
 }
 
 .legal-wrapper span {
   align-items: center;
-  padding: 0.3rem 0rem;
+  padding: 0.3rem 0;
 }
-
-
