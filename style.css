@@ -320,6 +320,38 @@ a {
   background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F12%2Fslackstock.jpg&signature=563912982746faa3ac299cf1576a3aa3");
 }
 
+.technology-container .apps {
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F12%2FSnag_3e684c11.png&signature=d9f5af92fb7d65d0922d5f171b63d57b");
+}
+
+.technology-container .gear {
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F12%2FSnapdragon-888-Mockup.png&signature=c6208e7176cdd83eaa0e27427afa9bdc");
+}
+
+.technology-container .tech {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/corona_news-6_blue-796x398.gif");
+}
+
+.technology-container .creative {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-13-796x417.jpg");
+}
+
+.technology-container .podium {
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fgoogle-logo-podium.png&signature=7508777eee1fb9a39a65db1227be0b4a");
+}
+
+.technology-container .insights{
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F12%2Fmeeting-leader-startup-gq.png&signature=2c9db485eca73eb5dd338d5a7bd93df3");
+} 
+
+.technology-container .launch {
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fhummer-ev-future-car-love-hate-next-gmc-gm-ultium.jpg&signature=801c1c148b502bad4b7ba67bc6417c3a");
+}
+
+.technology-container .distract {
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F11%2Flucid-air-configurator-ray-tracing-car-future-ev-zerolight.jpg&signature=3a8658003cf3f92188923ab0528c18fb");
+}
+
 .technology-item .cover-item-title {
   position: relative;
   top: -10rem;
