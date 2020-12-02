@@ -223,13 +223,14 @@ img {
 
 .story {
   margin-bottom: 1rem;
+  grid-template-columns: 12rem auto;
+  column-gap: 1.5rem;
 }
 
 .story .latest-image {
   background-repeat: no-repeat;
-  width: 70%;
+  width: 100%;
   height: 9rem;
-  margin-right: 1rem;
 }
 
 .story .one {
