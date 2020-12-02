@@ -674,9 +674,13 @@ img {
     grid-row: 1/ span 3;
   }
 
+  /** wrapper */ 
+
   .wrapper {
     margin: 2rem 20rem;
   }
+
+  /** latest **/
 
   .latest .latest-articles {
     grid-template-columns: auto auto auto auto;
@@ -692,4 +696,5 @@ img {
     height: 20rem;
     margin-bottom: 1rem;
   }
+
 }
