@@ -396,12 +396,8 @@ a {
   margin-left: 2rem;
   display: list-item;
   /* list-style-type: disc; */
-  
-  list-style-position: outside;
-}
 
-.styled-list li {
-  margin-bottom: 1rem;
+  list-style-position: outside;
 }
 
 /* Latest funding */
