@@ -15,6 +15,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul li {
@@ -22,7 +23,7 @@ ul li {
 }
 
 ul {
-  list-style-type: none
+  list-style-type: none;
 }
 
 img {
@@ -31,8 +32,8 @@ img {
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /** global rules */
@@ -43,6 +44,7 @@ a {
 }
 
 .grid {
+  display: -ms-grid;
   display: grid;
 }
 
@@ -56,13 +58,13 @@ a {
 
 /** nav mobile */
 .mobile-nav {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    height: 48px;
-    background-color: #fff;
-    box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 48px;
+  background-color: #fff;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
 }
 
 .mobile-nav-header img {
@@ -104,89 +106,89 @@ a {
 }
 
 .cover-items {
-    position: relative;
-    padding: 4px;
+  position: relative;
+  padding: 4px;
 }
 
 .image-container {
-    position: relative;
-    width: 100%;
-    height:220px;
+  position: relative;
+  width: 100%;
+  height: 220px;
 }
 
 .cover-items .image-container {
-    transition: background-color .4s ease;
-    cursor: pointer;
+  transition: background-color 0.4s ease;
+  cursor: pointer;
 }
 
 .cover-items .cover-image {
-    width: 100%;
-    height: 220px;
-    z-index: 1;
+  width: 100%;
+  height: 220px;
+  z-index: 1;
 }
 
 .cover-items .study {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2013/02/cyberlocks-730x422.jpg"); 
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2013/02/cyberlocks-730x422.jpg");
 }
 
 .cover-items .cloud {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Untitled-design-3-1-796x417.png"); 
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Untitled-design-3-1-796x417.png");
 }
 
 .cover-items .javascript {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/1-copy-1-796x417.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/1-copy-1-796x417.jpg");
 }
 
 .cover-gradient {
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9));
-    width: 100%;
-    height: 220px;
-    position: absolute; 
-    top: 0px;
-    z-index: 2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  top: 0px;
+  z-index: 2;
 }
 
 .cover-items .cover-item-title {
-    position: absolute;
-    bottom: 20px;
-    left: 15px;
-    z-index: 3;
-    cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  z-index: 3;
+  cursor: pointer;
 }
 
 .cover-item-title h2 {
-    font-family: 'Teko', sans-serif;
-    font-size: 1.5rem;
-    color: #fff;
+  font-family: "Teko", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 .cover-item-title h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    font-size: 2rem;
-    color: #fff;
-    line-height: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #fff;
+  line-height: 2rem;
 }
 
 .cover-item-title ul {
-    color: hsla(0,0%,100%,.6);
-    font-size: 1.2rem;
-    font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.5rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 1.2rem;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5rem;
 }
 
 .cover-item-title .author-link:hover {
-    color: #eee;
+  color: #eee;
 }
 
 .cover-item-title i {
-    padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .cover-item-title .article-info {
-    display: flex;
-    padding: 1rem 0;
-    align-items: center;
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
 }
 
 /** latest */
@@ -196,7 +198,7 @@ a {
 }
 
 .latest .latest-articles {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .wrapper .orange-title {
@@ -207,8 +209,8 @@ a {
 }
 
 .wrapper .orange-title:hover {
-    color: #000;
-  }
+  color: #000;
+}
 
 .story {
   margin-bottom: 1rem;
@@ -226,31 +228,31 @@ a {
 }
 
 .story .two {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/slackstock-480x270.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/slackstock-480x270.jpg");
 }
 
 .story .three {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Untitled-design-1-1-516x270.png");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Untitled-design-1-1-516x270.png");
 }
 
 .story .four {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/WhatsApp-manage-storage-1-516x270.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/WhatsApp-manage-storage-1-516x270.jpg");
 }
 
 .story .five {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/header-image-nintendo-switch-11-software-update-516x270.png");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/header-image-nintendo-switch-11-software-update-516x270.png");
 }
 
 .story .six {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/advice-bad-see-no-evil-monkey-emoji-gq-516x270.png");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/advice-bad-see-no-evil-monkey-emoji-gq-516x270.png");
 }
 
 .story .seven {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/1-copy-516x270.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/1-copy-516x270.jpg");
 }
 
 .story .eight {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/image001-1-480x270.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/image001-1-480x270.jpg");
 }
 
 .story-article h4:hover {
@@ -262,7 +264,8 @@ a {
   margin-top: 1rem;
 }
 
-.story-article li, .story-article li a {
+.story-article li,
+.story-article li a {
   display: inline;
   color: rgb(95, 95, 95);
 }
@@ -274,15 +277,14 @@ a {
 /* Latest funding */
 
 .latest-funding {
-    font-size: 1.6rem;
-    font-family: Helvetica, Arial, sans-serif;
-    padding: 8px;
-    margin: 8px;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 8px;
+  margin: 8px;
 }
 
-.latest-funding header{
-    flex-direction: column;
-
+.latest-funding header {
+  flex-direction: column;
 }
 
 .latest-funding .header-link {
@@ -303,7 +305,7 @@ a {
 }
 
 .funding-item .funding-header {
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
   height: 9rem;
 }
 
@@ -332,7 +334,7 @@ a {
 }
 
 .funding-item .funding-money h5 {
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
   color: #555;
@@ -360,3 +362,81 @@ a {
 .funding-item .funding-tags a:hover {
   color: #000;
 }
+
+
+/* footer */ 
+
+.footer {
+  width: 100%;
+}
+
+.footer-links {
+  background: #131313;
+}
+
+.footer-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem
+}
+
+.footer-links-social {
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.footer-links-social i {
+  padding: 1rem;
+  margin: 0.3rem 0.4rem;
+  font-size: 1.5rem;
+  color: #fff;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.footer-links-social i:hover {
+  background-color: #000;
+}
+
+.footer-menu {
+  justify-content: center;
+}
+
+.footer-menu li {
+  padding: 0 1rem;
+  font-family: "Teko", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #aaa;
+}
+
+.footer-menu li:hover {
+  color: #fff
+}
+
+.footer-legal {
+  background-color: #000;
+  color: #aaa;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.legal-wrapper {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.legal-wrapper img {
+  height: 1.8rem;
+}
+
+.legal-wrapper span {
+  align-items: center;
+  padding: 0.3rem 0rem;
+}
+
+
