@@ -370,7 +370,7 @@ img {
   height: 22rem; /* this height is set for mobile version, it will be changed for desktop using a media query */
 }
 
-.technology-item { 
+.technology-item {
   margin-bottom: 1rem;
 }
 
@@ -398,7 +398,7 @@ img {
 }
 
 .tech-item-article .latest-header {
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
 }
 
 .tech-item-article .sub-image {
@@ -406,7 +406,6 @@ img {
   width: 50%;
   height: 10rem;
 }
-
 
 .styled-list li::before {
   content: "•";
@@ -425,7 +424,7 @@ img {
   font-size: 1.2rem;
   font-weight: 200;
   line-height: 1.3rem;
-  padding-bottom:1.3rem;
+  padding-bottom: 1.3rem;
   border-bottom: 1px solid #eee;
 }
 
@@ -605,4 +604,15 @@ img {
 .legal-wrapper span {
   align-items: center;
   padding: 0.3rem 0;
+}
+
+/** media query for desktop **/
+@media only screen and (min-width: 1024px) {
+  .nav-desktop {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
 }
