@@ -790,5 +790,18 @@ img {
     height: 20rem;
     margin-bottom: 1rem;
   }
-  
+
+  /** Funding **/
+ 
+
+  /** Technology Container ***/
+
+  .technology-container {
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+  }
+
+  .technology-container .tech-item-article {
+    top: 0.2rem;
+  }
 }
