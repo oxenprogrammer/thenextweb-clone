@@ -353,22 +353,19 @@ img {
   background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F11%2Flucid-air-configurator-ray-tracing-car-future-ev-zerolight.jpg&signature=3a8658003cf3f92188923ab0528c18fb");
 }
 
+.article-image-container,
+.technology-item .image-container {
+  width: 100%;
+  height: 22rem; /* this height is set for mobile version, it will be changed for desktop using a media query */
+}
+
 .technology-item .cover-item-title {
   position: relative;
-  top: -10rem;
+  bottom: 13rem;
   left: 1.5rem;
   z-index: 3;
   cursor: pointer;
-}
-
-.tech-header ul {
-  color: #fff;
-  margin-top: 1rem;
-}
-
-.tech-item-article {
-  position: relative;
-  top: -8.5rem;
+  padding: 1rem 2rem 1rem 0;
 }
 
 .tech-item-article header {
@@ -376,11 +373,16 @@ img {
   color: #f42;
 }
 
+.tech-item-article .latest-header {
+  font-family: 'Teko', sans-serif;
+}
+
 .tech-item-article .sub-image {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Untitled-design-3-1.png");
   width: 50%;
   height: 10rem;
 }
+
 
 .styled-list li::before {
   content: "•";
@@ -390,12 +392,9 @@ img {
 }
 
 .styled-list a {
-  position: relative;
-  top: -8rem;
   margin-left: 2rem;
   display: list-item;
   /* list-style-type: disc; */
-
   list-style-position: outside;
 }
 
