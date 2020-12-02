@@ -202,6 +202,10 @@ img {
   flex-direction: column;
 }
 
+.latest .latest-news {
+  margin-bottom: 2rem;
+}
+
 .latest h2 a,
 .technology-item h2 a {
   font-family: "Ubuntu", sans-serif;
@@ -217,19 +221,21 @@ img {
   margin-bottom: 1.3rem;
 }
 
-.wrapper .orange-title:hover {
+.wrapper .orange-title:hover,
+.latest-header span:hover {
   color: #000;
 }
 
 .story {
   margin-bottom: 1rem;
+  grid-template-columns: 12rem auto;
+  column-gap: 1.5rem;
 }
 
 .story .latest-image {
   background-repeat: no-repeat;
-  width: 70%;
+  width: 100%;
   height: 9rem;
-  margin-right: 1rem;
 }
 
 .story .one {
@@ -341,9 +347,9 @@ img {
   background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fgoogle-logo-podium.png&signature=7508777eee1fb9a39a65db1227be0b4a");
 }
 
-.technology-container .insights{
+.technology-container .insights {
   background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F12%2Fmeeting-leader-startup-gq.png&signature=2c9db485eca73eb5dd338d5a7bd93df3");
-} 
+}
 
 .technology-container .launch {
   background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fhummer-ev-future-car-love-hate-next-gmc-gm-ultium.jpg&signature=801c1c148b502bad4b7ba67bc6417c3a");
@@ -485,6 +491,16 @@ img {
 
 .funding-item .funding-tags a:hover {
   color: #000;
+}
+
+/** latest deals */
+.latest-header {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.latest-header span {
+  color: #f42;
 }
 
 /* footer */
