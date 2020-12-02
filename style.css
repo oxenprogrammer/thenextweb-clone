@@ -56,10 +56,6 @@ img {
   display: block;
 }
 
-.nav-desktop {
-  display: none;
-}
-
 /** nav mobile */
 
 .mobile-nav {
@@ -107,6 +103,7 @@ img {
 /* desktop nav */
 
 .nav-desktop {
+  display: none;
   position: fixed;
   width: 100%;
   top: 0;
@@ -552,6 +549,10 @@ img {
   flex-flow: wrap;
 }
 
+.funding-container .last-funding-item {
+  display: none;
+}
+
 .funding-item {
   padding: 8px 0;
 }
@@ -740,16 +741,14 @@ img {
     font-size: 1.2rem;
     color: #fff;
   }
+
   .cover-one .study {
     height: 448px;
   }
 
   .cover-one .cover-gradient {
     height: 448px;
-    background-image: linear-gradient(
-      rgba(235, 15, 15, 0.842),
-      rgba(0, 0, 0, 0.952)
-    );
+    background-image: linear-gradient(rgba(235, 15, 15, 0.842), rgba(0, 0, 0, 0.952));
   }
 
   .cover-one .article-title {
@@ -794,7 +793,21 @@ img {
   }
 
   /** Funding **/
- 
+
+  .funding-header,
+  .funding-header .funding-header-links {
+    display: flex;
+  }
+
+  .funding-container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1rem;
+  }
+
+  .funding-container .last-funding-item {
+    display: block;
+  }
 
   /** Technology Container ***/
 
