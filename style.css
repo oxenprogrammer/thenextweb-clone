@@ -56,7 +56,12 @@ img {
   display: block;
 }
 
+.nav-desktop {
+  display: none;
+}
+
 /** nav mobile */
+
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -225,14 +230,14 @@ img {
   margin-bottom: 1.3rem;
 }
 
-.wrapper .orange-title:hover,
-.latest-header span:hover {
+.wrapper .orange-title:hover {
   color: #000;
 }
 
 .story {
   margin-bottom: 1rem;
   grid-template-columns: 12rem auto;
+  -ms-grid-columns: 12rem auto;
   column-gap: 1.5rem;
 }
 
@@ -370,7 +375,7 @@ img {
   height: 22rem; /* this height is set for mobile version, it will be changed for desktop using a media query */
 }
 
-.technology-item { 
+.technology-item {
   margin-bottom: 1rem;
 }
 
@@ -397,8 +402,8 @@ img {
   font-size: 1.5rem;
 }
 
-.tech-item-article .latest-header {
-  font-family: 'Teko', sans-serif;
+.tech-item-article .latest-title {
+  font-family: "Teko", sans-serif;
 }
 
 .tech-item-article .sub-image {
@@ -407,6 +412,45 @@ img {
   height: 10rem;
 }
 
+/* sub-images for tech item articles */
+
+.tech-item-article .num1 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/stonksdorsey.jpg");
+}
+
+.tech-item-article .num2 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/header-image-spotify-2020-wrapped.png");
+}
+
+.tech-item-article .num3 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/Samsung-Galaxy-Note-8.jpg");
+}
+
+.tech-item-article .num4 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/Untitled-1.jpg");
+}
+
+.tech-item-article .num5 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/card-v-card-bank-account-multiplayer-game.png");
+}
+
+.tech-item-article .num6 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq.png");
+}
+
+.tech-item-article .num7 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/slackstock.jpg");
+}
+
+.tech-item-article .num8 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Amazon-Rivian-electric-delivery-van.jpg");
+}
+
+.tech-item-article .num9 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/meeting-leader-startup-gq-516x270.png");
+}
+
+/* lists below each tech item article */
 
 .styled-list li::before {
   content: "•";
@@ -415,17 +459,16 @@ img {
   top: 2rem;
 }
 
-.styled-list a {
+.styled-list .styled-list-item {
   margin-left: 2rem;
   display: list-item;
-  /* list-style-type: disc; */
   list-style-position: outside;
   font-family: Arial, sans-serif;
   color: #555;
   font-size: 1.2rem;
   font-weight: 200;
   line-height: 1.3rem;
-  padding-bottom:1.3rem;
+  padding-bottom: 1.3rem;
   border-bottom: 1px solid #eee;
 }
 
@@ -527,6 +570,10 @@ img {
   color: #f42;
 }
 
+.latest-header span:hover {
+  color: #000;
+}
+
 /* footer */
 
 .footer {
@@ -602,7 +649,9 @@ img {
   height: 1.8rem;
 }
 
-.legal-wrapper span {
+.legal-wrapper .legal-link {
   align-items: center;
   padding: 0.3rem 0;
 }
+
+/* media queries */
