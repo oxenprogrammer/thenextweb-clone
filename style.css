@@ -386,9 +386,10 @@ a {
 .styled-list a {
   position: relative;
   top: -8rem;
+  margin-left: 2rem;
   display: list-item;
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 .styled-list li {
