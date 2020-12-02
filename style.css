@@ -1,5 +1,5 @@
 /** General rules */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Teko:wght@300;500&family=Ubuntu:wght@500&display=swap');
 
 * {
   padding: 0;
@@ -29,6 +29,10 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {
@@ -116,12 +120,14 @@ a {
   height: 220px;
 }
 
-.cover-items .image-container {
+.cover-items .image-container,
+.technology-item .image-container {
   transition: background-color 0.4s ease;
   cursor: pointer;
 }
 
-.cover-items .cover-image {
+.cover-items .cover-image,
+.technology-item .cover-image {
   width: 100%;
   height: 220px;
   z-index: 1;
@@ -156,13 +162,15 @@ a {
   cursor: pointer;
 }
 
-.cover-item-title h2 {
+.cover-item-title h2,
+.cover-item-title h5 {
   font-family: "Teko", sans-serif;
   font-size: 1.5rem;
   color: #fff;
 }
 
-.cover-item-title h4 {
+.cover-item-title h4,
+.cover-item-title h3 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 2rem;
@@ -192,7 +200,8 @@ a {
 }
 
 /** latest */
-.wrapper .latest {
+.wrapper .latest,
+.technology-container {
   font-size: 1.6rem;
   margin: 1.6rem;
 }
@@ -201,7 +210,8 @@ a {
   flex-direction: column;
 }
 
-.wrapper .orange-title {
+.latest h2 a,
+.technology-item h2 a {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   color: #f42;
@@ -255,6 +265,38 @@ a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/image001-1-480x270.jpg");
 }
 
+.story .cyber {
+  background-image: url("https://cdnp3.stackassets.com/b53e84459db4931ad368383c31a177ae7d423e4a/store/71f01d798ad4ac4cc90188fca7d2f48e9ef08a76f9f1384a475bc0fa7ea7/sale_149481_primary_image.jpg");
+}
+
+.story .skills {
+  background-image: url("https://cdnp0.stackassets.com/0799bf00352de2d2111fa7580a4aeb4d5e36829c/store/831574f40ca85b498631ae2881f81d02cd9eedd411afd5c0c8f689969ad6/sale_19040_primary_image.jpg");
+}
+
+.story .coding {
+  background-image: url("https://cdnp1.stackassets.com/02fad6ebb5e9155d3d4f7bf70f8bdcd3a83e889c/store/f4d7f0d4bfd77a88b4226b7e2f7a0565a4d18afa18fdcfe4a0a35ff72346/sale_148069_primary_image.jpg");
+}
+
+.story .xsplit {
+  background-image: url("https://cdnp0.stackassets.com/a128562cd1aa11af3540443b084537e22e470fea/store/d6cedecfe0c6510eb288464579ab577c9d8ad010a1c3e93d1490104a7338/sale_21097_primary_image.jpg");
+}
+
+.story .python {
+  background-image: url("https://cdnp1.stackassets.com/4c6357549bbe196eac7a2a550f3cf2a380f39e44/store/7d5851d962ea8a62a7e9939f0efebc686b69d83821b63060d3109048021b/sale_19399_primary_image.jpg");
+} 
+
+.story .ai {
+  background-image: url("https://cdnp3.stackassets.com/fa74fc0ae00dca34fbe6bbeede760a176caf0a21/store/eb873f170e9b4a3722fb708fd8b520072c6a2de5201831f5310bb9030132/sale_48032_primary_image.jpg");
+}
+
+.story .google {
+  background-image: url("https://cdnp3.stackassets.com/2e48d6d88c977fabc12957eda48ff551dcafec57/store/00da8d07fbefac67f53c9b8d947428a1fc5b56032537455cc1a84d5faff9/sale_118994_primary_image.jpg");
+}
+
+.story .cert {
+  background-image: url("https://cdnp3.stackassets.com/4a072a16e2442e554487a911cac65dbc6c900d0b/store/1ef683695ea4830afe8124ceb99fbb489b905a51107a47bf05320636c0bf/sale_118997_primary_image.jpg");
+}
+
 .story-article h4:hover {
   text-decoration: underline;
   color: #f42;
@@ -265,6 +307,7 @@ a {
 }
 
 .story-article li,
+.tech-header li,
 .story-article li a {
   display: inline;
   color: rgb(95, 95, 95);
@@ -274,6 +317,51 @@ a {
   color: rgb(31, 29, 29);
 }
 
+/* Technology Container */
+.technology-container .hard-fork {
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F12%2Fslackstock.jpg&signature=563912982746faa3ac299cf1576a3aa3");
+}
+
+.technology-item .cover-item-title {
+  position: relative;
+  top: -10rem;
+  left: 1.5rem;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.tech-header ul {
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.tech-item-article {
+  position: relative;
+  top: -8.5rem;
+}
+
+.tech-item-article header {
+  padding-top: 1rem;
+  color: #f42;
+}
+
+.tech-item-article .sub-image {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Untitled-design-3-1.png");
+  width: 50%;
+  height: 10rem;
+}
+
+.styled-list a {
+  position: relative;
+  top: -8rem;
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.styled-list li {
+  margin-bottom: 1rem;
+}
 /* Latest funding */
 
 .latest-funding {
