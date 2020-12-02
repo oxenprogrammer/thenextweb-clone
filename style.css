@@ -383,18 +383,27 @@ a {
   height: 10rem;
 }
 
+.styled-list li::before {
+  content: "•";
+  color: #f42;
+  position: relative;
+  top: -6rem;
+}
+
 .styled-list a {
   position: relative;
   top: -8rem;
   margin-left: 2rem;
   display: list-item;
-  list-style-type: disc;
+  /* list-style-type: disc; */
+  
   list-style-position: outside;
 }
 
 .styled-list li {
   margin-bottom: 1rem;
 }
+
 /* Latest funding */
 
 .latest-funding {
