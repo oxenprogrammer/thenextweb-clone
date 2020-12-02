@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com"/>
-  <title>TNW</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <title>TNW</title>
   </head>
   <body>
     <main class="main">
       <nav class="nav-desktop">
-        <ul class="top-nav">
+        <ul class="top-nav flex">
           <li class="left-links">
-            <a href="#">News</a>
-            <div class="events">
-              <a href="#">Events</a>
-              <ul>
-                <li><a href="#">TNW2020</a></li>
-                <li><a href="#">Couch conferences</a></li>
-              </ul>
-            </div>
-            <div class="business">
-              <a href="#">Business</a>
-              <ul>
-                <li><a href="#">Index</a></li>
-                <li><a href="#">Programs</a></li>
-              </ul>
-            </div>
-            <a href="#">AMAs</a>
-            <a href="#">Spaces</a>
-            <a href="#">Terms & Conditions</a>
+            <a class="nav-link" href="#">News</a>
+            <a class="nav-link" href="#">Events <i class="fas fa-caret-down"></i></a>
+            <a class="nav-link" href="#">Business <i class="fas fa-caret-down"></i></a>
+            <a class="nav-link" href="#">AMAs</a>
+            <a class="nav-link" href="#">Spaces</a>
+            <a class="nav-link" href="#">Terms & Conditions</a>
           </li>
           <li class="right-links">
-            <a href="#">About</a>
-            <a href="#">Advertise</a>
-            <a href="#">Jobs</a>
-            <a href="#">Contact</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Advertise</a>
+            <a class="nav-link" href="#">Jobs</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <div class="top-menu">
-          <a href="#">LATEST</a>
-          <a href="#">HARD FORK</a>
-          <a href="#">PLUGGED</a>
-          <a href="#">README</a>
-          <a href="#">GROWTH QUARTERS</a>
-          <a href="#">SHIFT</a>
-          <a href="#">NEURAL</a>
-          <i class="fas fa-search"></i>
+        <div class="top-menu flex">
+          <div class="top-menu-left flex">
+            <a class="menu-nav-link" href="#">LATEST</a>
+            <a class="menu-nav-link" href="#">HARD FORK</a>
+            <a class="menu-nav-link" href="#">PLUGGED</a>
+            <a class="menu-nav-link" href="#">README</a>
+            <a class="menu-nav-link" href="#">GROWTH QUARTERS</a>
+            <a class="menu-nav-link" href="#">SHIFT</a>
+            <a class="menu-nav-link" href="#">NEURAL</a>
+          </div>
+          <i class="fas fa-search menu-nav-link top-search"></i>
         </div>
       </nav>
       <nav class="mobile-nav">
@@ -115,7 +106,9 @@
       </section>
       <div class="wrapper">
         <section class="latest block">
-          <h2 class="latest-news"><a class="orange-title" href="#">Latest news ></a></h2>
+          <h2 class="latest-news">
+            <a class="orange-title" href="#">Latest news ></a>
+          </h2>
           <ul class="latest-articles flex">
             <li class="latest-articles-elements">
               <div class="story grid">
@@ -232,7 +225,7 @@
             </li>
           </ul>
         </section>
-<!-- Latest funding section-->
+        <!-- Latest funding section-->
         <section class="latest-funding">
           <header class="flex">
             <h2 class="orange-title">
@@ -341,7 +334,7 @@
             </div>
           </div>
         </section>
-<!-- Section with articles about technology -->
+        <!-- Section with articles about technology -->
         <section class="technology-container grid">
           <article class="technology-item">
             <h2><a class="orange-title" href="#">Hard Fork ></a></h2>
@@ -354,10 +347,15 @@
                   </div>
                   <header class="cover-item-title tech-header">
                     <h5>MOST POPULAR</h5>
-                    <h3><a href="#">Slack stock hits record highs as traders buy the Salesforce rumor</a></h3>
+                    <h3>
+                      <a href="#"
+                        >Slack stock hits record highs as traders buy the
+                        Salesforce rumor</a
+                      >
+                    </h3>
                     <ul class="author-time">
                       <li>David Canellis</li>
-                      <li> - 2 hours ago</li>
+                      <li>- 2 hours ago</li>
                     </ul>
                   </header>
                 </article>
@@ -366,27 +364,57 @@
                 <article class="flex tech-item-article">
                   <header>
                     <h5 class="latest-title">LATEST</h5>
-                    <h4><a href="#">Can we really trust the Cloud with our data?</a></h4>
+                    <h4>
+                      <a href="#"
+                        >Can we really trust the Cloud with our data?</a
+                      >
+                    </h4>
                   </header>
-                  <a title="person thinking" class="background sub-image num1" href="#"></a>
+                  <a
+                    title="person thinking"
+                    class="background sub-image num1"
+                    href="#"
+                  ></a>
                 </article>
               </li>
             </ul>
             <ul class="styled-list">
               <li>
-                <h4><a class="styled-list-item" href="#">4 JavaScript tools to clean up your dirty code</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >4 JavaScript tools to clean up your dirty code</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Boston’s Mayor has big plans for EVs in the city</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Boston’s Mayor has big plans for EVs in the city</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Maserati commits to going all-electric by 2025, COO says</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Maserati commits to going all-electric by 2025, COO says</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Facebook said It would ban holocaust deniers. Instead, its algorithm provided a networkfor them</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Facebook said It would ban holocaust deniers. Instead, its
+                    algorithm provided a networkfor them</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Volvo thinks gaming tech can help make self-driving cars safer</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Volvo thinks gaming tech can help make self-driving cars
+                    safer</a
+                  >
+                </h4>
               </li>
             </ul>
           </article>
@@ -401,7 +429,12 @@
                   </div>
                   <header class="cover-item-title tech-header">
                     <h5>MOST POPULAR</h5>
-                    <h3><a href="#">Slack stock hits record highs as traders buy the Salesforce rumor</a></h3>
+                    <h3>
+                      <a href="#"
+                        >Slack stock hits record highs as traders buy the
+                        Salesforce rumor</a
+                      >
+                    </h3>
                     <ul>
                       <li>David Canellis</li>
                       <li>2 hours ago</li>
@@ -413,27 +446,57 @@
                 <article class="flex tech-item-article">
                   <header>
                     <h5 class="latest-title">LATEST</h5>
-                    <h4><a href="#">Can we really trust the Cloud with our data?</a></h4>
+                    <h4>
+                      <a href="#"
+                        >Can we really trust the Cloud with our data?</a
+                      >
+                    </h4>
                   </header>
-                  <a title= "spotify" class="background sub-image num2" href="#"></a>
+                  <a
+                    title="spotify"
+                    class="background sub-image num2"
+                    href="#"
+                  ></a>
                 </article>
               </li>
             </ul>
             <ul class="styled-list">
               <li>
-                <h4><a class="styled-list-item" href="#">4 JavaScript tools to clean up your dirty code</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >4 JavaScript tools to clean up your dirty code</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Boston’s Mayor has big plans for EVs in the city</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Boston’s Mayor has big plans for EVs in the city</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Maserati commits to going all-electric by 2025, COO says</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Maserati commits to going all-electric by 2025, COO says</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Facebook said It would ban holocaust deniers. Instead, its algorithm provided a networkfor them</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Facebook said It would ban holocaust deniers. Instead, its
+                    algorithm provided a networkfor them</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Volvo thinks gaming tech can help make self-driving cars safer</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Volvo thinks gaming tech can help make self-driving cars
+                    safer</a
+                  >
+                </h4>
               </li>
             </ul>
           </article>
@@ -448,7 +511,12 @@
                   </div>
                   <header class="cover-item-title tech-header">
                     <h5>MOST POPULAR</h5>
-                    <h3><a href="#">Slack stock hits record highs as traders buy the Salesforce rumor</a></h3>
+                    <h3>
+                      <a href="#"
+                        >Slack stock hits record highs as traders buy the
+                        Salesforce rumor</a
+                      >
+                    </h3>
                     <ul>
                       <li>David Canellis</li>
                       <li>2 hours ago</li>
@@ -460,27 +528,57 @@
                 <article class="flex tech-item-article">
                   <header>
                     <h5 class="latest-title">LATEST</h5>
-                    <h4><a href="#">Can we really trust the Cloud with our data?</a></h4>
+                    <h4>
+                      <a href="#"
+                        >Can we really trust the Cloud with our data?</a
+                      >
+                    </h4>
                   </header>
-                  <a title="samsung" class="background sub-image num3" href="#"></a>
+                  <a
+                    title="samsung"
+                    class="background sub-image num3"
+                    href="#"
+                  ></a>
                 </article>
               </li>
             </ul>
             <ul class="styled-list">
               <li>
-                <h4><a class="styled-list-item" href="#">4 JavaScript tools to clean up your dirty code</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >4 JavaScript tools to clean up your dirty code</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Boston’s Mayor has big plans for EVs in the city</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Boston’s Mayor has big plans for EVs in the city</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Maserati commits to going all-electric by 2025, COO says</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Maserati commits to going all-electric by 2025, COO says</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Facebook said It would ban holocaust deniers. Instead, its algorithm provided a networkfor them</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Facebook said It would ban holocaust deniers. Instead, its
+                    algorithm provided a networkfor them</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Volvo thinks gaming tech can help make self-driving cars safer</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Volvo thinks gaming tech can help make self-driving cars
+                    safer</a
+                  >
+                </h4>
               </li>
             </ul>
           </article>
@@ -495,7 +593,12 @@
                   </div>
                   <header class="cover-item-title tech-header">
                     <h5>MOST POPULAR</h5>
-                    <h3><a href="#">Slack stock hits record highs as traders buy the Salesforce rumor</a></h3>
+                    <h3>
+                      <a href="#"
+                        >Slack stock hits record highs as traders buy the
+                        Salesforce rumor</a
+                      >
+                    </h3>
                     <ul>
                       <li>David Canellis</li>
                       <li>2 hours ago</li>
@@ -507,27 +610,57 @@
                 <article class="flex tech-item-article">
                   <header>
                     <h5 class="latest-title">LATEST</h5>
-                    <h4><a href="#">Can we really trust the Cloud with our data?</a></h4>
+                    <h4>
+                      <a href="#"
+                        >Can we really trust the Cloud with our data?</a
+                      >
+                    </h4>
                   </header>
-                  <a title="computer" class="background sub-image num4" href="#"></a>
+                  <a
+                    title="computer"
+                    class="background sub-image num4"
+                    href="#"
+                  ></a>
                 </article>
               </li>
             </ul>
             <ul class="styled-list">
               <li>
-                <h4><a class="styled-list-item" href="#">4 JavaScript tools to clean up your dirty code</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >4 JavaScript tools to clean up your dirty code</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Boston’s Mayor has big plans for EVs in the city</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Boston’s Mayor has big plans for EVs in the city</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Maserati commits to going all-electric by 2025, COO says</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Maserati commits to going all-electric by 2025, COO says</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Facebook said It would ban holocaust deniers. Instead, its algorithm provided a networkfor them</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Facebook said It would ban holocaust deniers. Instead, its
+                    algorithm provided a networkfor them</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Volvo thinks gaming tech can help make self-driving cars safer</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Volvo thinks gaming tech can help make self-driving cars
+                    safer</a
+                  >
+                </h4>
               </li>
             </ul>
           </article>
@@ -542,7 +675,12 @@
                   </div>
                   <header class="cover-item-title tech-header">
                     <h5>MOST POPULAR</h5>
-                    <h3><a href="#">Slack stock hits record highs as traders buy the Salesforce rumor</a></h3>
+                    <h3>
+                      <a href="#"
+                        >Slack stock hits record highs as traders buy the
+                        Salesforce rumor</a
+                      >
+                    </h3>
                     <ul>
                       <li>David Canellis</li>
                       <li>2 hours ago</li>
@@ -554,27 +692,57 @@
                 <article class="flex tech-item-article">
                   <header>
                     <h5 class="latest-title">LATEST</h5>
-                    <h4><a href="#">Can we really trust the Cloud with our data?</a></h4>
+                    <h4>
+                      <a href="#"
+                        >Can we really trust the Cloud with our data?</a
+                      >
+                    </h4>
                   </header>
-                  <a title="game" class="background sub-image num5" href="#"></a>
+                  <a
+                    title="game"
+                    class="background sub-image num5"
+                    href="#"
+                  ></a>
                 </article>
               </li>
             </ul>
             <ul class="styled-list">
               <li>
-                <h4><a class="styled-list-item" href="#">4 JavaScript tools to clean up your dirty code</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >4 JavaScript tools to clean up your dirty code</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Boston’s Mayor has big plans for EVs in the city</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Boston’s Mayor has big plans for EVs in the city</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Maserati commits to going all-electric by 2025, COO says</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Maserati commits to going all-electric by 2025, COO says</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Facebook said It would ban holocaust deniers. Instead, its algorithm provided a networkfor them</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Facebook said It would ban holocaust deniers. Instead, its
+                    algorithm provided a networkfor them</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Volvo thinks gaming tech can help make self-driving cars safer</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Volvo thinks gaming tech can help make self-driving cars
+                    safer</a
+                  >
+                </h4>
               </li>
             </ul>
           </article>
@@ -589,7 +757,12 @@
                   </div>
                   <header class="cover-item-title tech-header">
                     <h5>MOST POPULAR</h5>
-                    <h3><a href="#">Slack stock hits record highs as traders buy the Salesforce rumor</a></h3>
+                    <h3>
+                      <a href="#"
+                        >Slack stock hits record highs as traders buy the
+                        Salesforce rumor</a
+                      >
+                    </h3>
                     <ul>
                       <li>David Canellis</li>
                       <li>2 hours ago</li>
@@ -601,27 +774,57 @@
                 <article class="flex tech-item-article">
                   <header>
                     <h5 class="latest-title">LATEST</h5>
-                    <h4><a href="#">Can we really trust the Cloud with our data?</a></h4>
+                    <h4>
+                      <a href="#"
+                        >Can we really trust the Cloud with our data?</a
+                      >
+                    </h4>
                   </header>
-                  <a title="virtual" class="background sub-image num6" href="#"></a>
+                  <a
+                    title="virtual"
+                    class="background sub-image num6"
+                    href="#"
+                  ></a>
                 </article>
               </li>
             </ul>
             <ul class="styled-list">
               <li>
-                <h4><a class="styled-list-item" href="#">4 JavaScript tools to clean up your dirty code</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >4 JavaScript tools to clean up your dirty code</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Boston’s Mayor has big plans for EVs in the city</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Boston’s Mayor has big plans for EVs in the city</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Maserati commits to going all-electric by 2025, COO says</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Maserati commits to going all-electric by 2025, COO says</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Facebook said It would ban holocaust deniers. Instead, its algorithm provided a networkfor them</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Facebook said It would ban holocaust deniers. Instead, its
+                    algorithm provided a networkfor them</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Volvo thinks gaming tech can help make self-driving cars safer</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Volvo thinks gaming tech can help make self-driving cars
+                    safer</a
+                  >
+                </h4>
               </li>
             </ul>
           </article>
@@ -636,7 +839,12 @@
                   </div>
                   <header class="cover-item-title tech-header">
                     <h5>MOST POPULAR</h5>
-                    <h3><a href="#">Slack stock hits record highs as traders buy the Salesforce rumor</a></h3>
+                    <h3>
+                      <a href="#"
+                        >Slack stock hits record highs as traders buy the
+                        Salesforce rumor</a
+                      >
+                    </h3>
                     <ul>
                       <li>David Canellis</li>
                       <li>2 hours ago</li>
@@ -648,27 +856,57 @@
                 <article class="flex tech-item-article">
                   <header>
                     <h5 class="latest-title">LATEST</h5>
-                    <h4><a href="#">Can we really trust the Cloud with our data?</a></h4>
+                    <h4>
+                      <a href="#"
+                        >Can we really trust the Cloud with our data?</a
+                      >
+                    </h4>
                   </header>
-                  <a title="fireworks" class="background sub-image num7" href="#"></a>
+                  <a
+                    title="fireworks"
+                    class="background sub-image num7"
+                    href="#"
+                  ></a>
                 </article>
               </li>
             </ul>
             <ul class="styled-list">
               <li>
-                <h4><a class="styled-list-item" href="#">4 JavaScript tools to clean up your dirty code</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >4 JavaScript tools to clean up your dirty code</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Boston’s Mayor has big plans for EVs in the city</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Boston’s Mayor has big plans for EVs in the city</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Maserati commits to going all-electric by 2025, COO says</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Maserati commits to going all-electric by 2025, COO says</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Facebook said It would ban holocaust deniers. Instead, its algorithm provided a networkfor them</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Facebook said It would ban holocaust deniers. Instead, its
+                    algorithm provided a networkfor them</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Volvo thinks gaming tech can help make self-driving cars safer</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Volvo thinks gaming tech can help make self-driving cars
+                    safer</a
+                  >
+                </h4>
               </li>
             </ul>
           </article>
@@ -683,7 +921,12 @@
                   </div>
                   <header class="cover-item-title tech-header">
                     <h5>MOST POPULAR</h5>
-                    <h3><a href="#">Slack stock hits record highs as traders buy the Salesforce rumor</a></h3>
+                    <h3>
+                      <a href="#"
+                        >Slack stock hits record highs as traders buy the
+                        Salesforce rumor</a
+                      >
+                    </h3>
                     <ul>
                       <li>David Canellis</li>
                       <li>2 hours ago</li>
@@ -695,7 +938,11 @@
                 <article class="flex tech-item-article">
                   <header>
                     <h5 class="latest-title">LATEST</h5>
-                    <h4><a href="#">Can we really trust the Cloud with our data?</a></h4>
+                    <h4>
+                      <a href="#"
+                        >Can we really trust the Cloud with our data?</a
+                      >
+                    </h4>
                   </header>
                   <a title="bus" class="background sub-image num8" href="#"></a>
                 </article>
@@ -703,19 +950,41 @@
             </ul>
             <ul class="styled-list">
               <li>
-                <h4><a class="styled-list-item" href="#">4 JavaScript tools to clean up your dirty code</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >4 JavaScript tools to clean up your dirty code</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Boston’s Mayor has big plans for EVs in the city</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Boston’s Mayor has big plans for EVs in the city</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Maserati commits to going all-electric by 2025, COO says</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Maserati commits to going all-electric by 2025, COO says</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Facebook said It would ban holocaust deniers. Instead, its algorithm provided a networkfor them</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Facebook said It would ban holocaust deniers. Instead, its
+                    algorithm provided a networkfor them</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Volvo thinks gaming tech can help make self-driving cars safer</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Volvo thinks gaming tech can help make self-driving cars
+                    safer</a
+                  >
+                </h4>
               </li>
             </ul>
           </article>
@@ -730,7 +999,12 @@
                   </div>
                   <header class="cover-item-title tech-header">
                     <h5>MOST POPULAR</h5>
-                    <h3><a href="#">Slack stock hits record highs as traders buy the Salesforce rumor</a></h3>
+                    <h3>
+                      <a href="#"
+                        >Slack stock hits record highs as traders buy the
+                        Salesforce rumor</a
+                      >
+                    </h3>
                     <ul>
                       <li>David Canellis</li>
                       <li>2 hours ago</li>
@@ -742,35 +1016,67 @@
                 <article class="flex tech-item-article">
                   <header>
                     <h5 class="latest-title">LATEST</h5>
-                    <h4><a href="#">Can we really trust the Cloud with our data?</a></h4>
+                    <h4>
+                      <a href="#"
+                        >Can we really trust the Cloud with our data?</a
+                      >
+                    </h4>
                   </header>
-                  <a title="computers" class="background sub-image num9" href="#"></a>
+                  <a
+                    title="computers"
+                    class="background sub-image num9"
+                    href="#"
+                  ></a>
                 </article>
               </li>
             </ul>
             <ul class="styled-list">
               <li>
-                <h4><a class="styled-list-item" href="#">4 JavaScript tools to clean up your dirty code</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >4 JavaScript tools to clean up your dirty code</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Boston’s Mayor has big plans for EVs in the city</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Boston’s Mayor has big plans for EVs in the city</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Maserati commits to going all-electric by 2025, COO says</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Maserati commits to going all-electric by 2025, COO says</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Facebook said It would ban holocaust deniers. Instead, its algorithm provided a networkfor them</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Facebook said It would ban holocaust deniers. Instead, its
+                    algorithm provided a networkfor them</a
+                  >
+                </h4>
               </li>
               <li>
-                <h4><a class="styled-list-item" href="#">Volvo thinks gaming tech can help make self-driving cars safer</a></h4>
+                <h4>
+                  <a class="styled-list-item" href="#"
+                    >Volvo thinks gaming tech can help make self-driving cars
+                    safer</a
+                  >
+                </h4>
               </li>
             </ul>
           </article>
         </section>
-<!-- Latest block section -->
+        <!-- Latest block section -->
         <section class="latest block">
           <header class="latest-header flex">
-            <h2><a class="orange-title latest-deals" href="#">Latest Deals ></a></h2>
+            <h2>
+              <a class="orange-title latest-deals" href="#">Latest Deals ></a>
+            </h2>
             <span><a href="#">See all Deals</a></span>
           </header>
           <ul class="latest-articles grid">
@@ -916,9 +1222,19 @@
       </div>
       <div class="footer-legal">
         <div class="legal-wrapper flex">
-          <span class="flex legal-link"><a href="#"><img class="logo-footer" src="./img/tnwlogo.png" alt="logo" /></a>© 2006–2020 The Next Web B.V.</span>
+          <span class="flex legal-link"
+            ><a href="#"
+              ><img class="logo-footer" src="./img/tnwlogo.png" alt="logo" /></a
+            >© 2006–2020 The Next Web B.V.</span
+          >
           <span class="flex legal-link">Made with &lt;3 in Amsterdam.</span>
-          <span class="flex legal-link">Powered by<a href="#"><img class="logo-footer" src="/img/stackpath.png" alt="stackpath logo"></a></span>
+          <span class="flex legal-link"
+            >Powered by<a href="#"
+              ><img
+                class="logo-footer"
+                src="/img/stackpath.png"
+                alt="stackpath logo" /></a
+          ></span>
         </div>
       </div>
     </footer>
