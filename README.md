@@ -22,11 +22,10 @@ Additional description about the project and its features.
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-N/A
 
 ### Setup
-Clone or Download the project from github.com
+Checkout the project on your web browser with the provided link.
+
 ### Install
 No installation required, simply right click on the index.html file and run it on your favorite browser.
 
@@ -37,13 +36,13 @@ Deploy on gh pages for testing purposes
 
 ## Authors
 
-👤 **Author1**
+👤 **Emmanuel Okello**
 
 - GitHub: [@githubhandle](https://github.com/oxenprogrammer)
 - Twitter: [@twitterhandle](https://twitter.com/ox_emmy)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/emanuel-okello-1217b4b3/)
 
-👤 **Author2**
+👤 **Alicia Rojas**
 
 - GitHub: [@githubhandle](https://github.com/aliciapaz)
 - Twitter: [@twitterhandle](https://twitter.com/aliciap38180090 )
@@ -65,4 +64,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE.txt) licensed.
+This project is [MIT](./LICENSE) licensed.
