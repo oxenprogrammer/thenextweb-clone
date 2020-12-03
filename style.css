@@ -742,6 +742,7 @@ img {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     margin: 1rem;
+    padding-top: 2px;
   }
 
   .cover-one {
@@ -898,5 +899,10 @@ img {
     width: 8rem;
     z-index: 119;
     background-size: cover;
+  }
+
+  /** cover **/
+  .cover {
+    padding-top: 2px;
   }
 }
