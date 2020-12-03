@@ -61,7 +61,7 @@ img {
 .mobile-nav {
   position: fixed;
   top: 0;
-  z-index:100;
+  z-index: 100;
   width: 100%;
   height: 48px;
   background-color: #fff;
@@ -867,7 +867,7 @@ img {
   }
 
   .medium-logo {
-    background-image: url('./img/tnwlogo.png');
+    background-image: url("./img/tnwlogo.png");
     position: absolute;
     top: 0;
     height: 6rem;
@@ -895,7 +895,7 @@ img {
   }
 
   .sticky-logo {
-    background-image: url('./img/tnwlogo.png');
+    background-image: url("./img/tnwlogo.png");
     height: 3.5rem;
     width: 8rem;
     z-index: 119;
@@ -941,9 +941,9 @@ img {
     display: none;
   }
 
-   /** latest **/
+  /** latest **/
 
-   .latest .latest-articles {
+  .latest .latest-articles {
     grid-template-columns: auto auto auto;
     gap: 2rem;
   }
