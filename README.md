@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://oxenprogrammer.github.io/new-york-times-clone/)
+[Live Demo Link](https://oxenprogrammer.github.io/thenextweb-clone/)
 
 
 ## Getting Started
