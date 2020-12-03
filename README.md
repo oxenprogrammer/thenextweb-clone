@@ -1,6 +1,14 @@
 # Project 2: Building with Responsive Design
 
+### Desktop version
+
 ![screenshot](./Desktop.jpg)
+
+### Tablet version
+
+![screenshot](./Tablet.jpg)
+
+### Mobie version
 
 ![screenshot](./Mobile.jpg)
 
