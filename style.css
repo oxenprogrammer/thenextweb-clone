@@ -731,6 +731,11 @@ img {
     display: none;
   }
 
+  .top-menu .top-menu-left {
+    position: relative;
+    left: -53.5rem;
+  }
+
   /* cover */
 
   .cover {
