@@ -882,7 +882,8 @@ img {
   }
 
   .top-menu .top-search {
-    padding-right: 12.5rem;
+    margin-right: 0;
+    margin-left: 11.5rem;
   }
 
   .top-nav .left-links {
