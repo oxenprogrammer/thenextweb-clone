@@ -37,6 +37,9 @@ img {
 }
 
 /** global rules */
+.main {
+  overflow-x: hidden;
+}
 
 .background {
   background-repeat: no-repeat;
@@ -80,7 +83,7 @@ img {
 .mobile-nav-icons {
   position: relative;
   float: right;
-  right: 54px;
+  right: -12px;
 }
 
 .mobile-nav-icons .fas {
@@ -755,7 +758,7 @@ img {
 
   .cover-one .date {
     position: relative;
-    right: -92rem;
+    left: 82rem;
     top: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
