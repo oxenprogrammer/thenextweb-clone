@@ -104,12 +104,9 @@ img {
 
 .nav-desktop {
   display: none;
-  position: fixed;
   width: 100%;
   top: 0;
-  z-index: 100;
-  background-color: #fff;
-  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+  z-index: 10;
 }
 
 .nav-desktop .top-nav {
@@ -131,12 +128,18 @@ img {
 }
 
 .top-menu {
+  display: none;
+  position: sticky !important; 
+  top: 0;
   justify-content: space-between;
   align-items: center;
   font-family: "Teko", sans-serif;
   font-size: 1.5rem;
   line-height: 3.5rem;
   color: #555;
+  background: #fff;
+  z-index: 10;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
 }
 
 .top-menu .menu-nav-link {
@@ -714,6 +717,10 @@ img {
 @media only screen and (min-width: 1024px) {
   .nav-desktop {
     display: block;
+  }
+
+  .top-menu {
+    display: flex;
   }
 
   .mobile-nav {
