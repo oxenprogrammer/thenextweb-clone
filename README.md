@@ -4,14 +4,6 @@
 
 ![screenshot](./Desktop.jpg)
 
-### Tablet version
-
-![screenshot](./Tablet.jpg)
-
-### Mobie version
-
-![screenshot](./Mobile.jpg)
-
 Additional description about the project and its features.
 
 ## Built With
