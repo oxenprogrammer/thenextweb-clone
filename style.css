@@ -864,14 +864,15 @@ img {
     background-image: url('./img/tnwlogo.png');
     position: absolute;
     top: 0;
-    background-color: #000;
     height: 6rem;
     width: 8rem;
     z-index: 120;
   }
 
   .top-menu-left {
-    padding-left: 9rem;
+    position: relative;
+    left: -2.5rem;
+    padding-left: 0;
   }
 
   .top-menu .top-search {
@@ -884,5 +885,13 @@ img {
 
   .top-nav .right-links {
     padding-right: 11rem;
+  }
+
+  .sticky-logo {
+    background-image: url('./img/tnwlogo.png');
+    height: 3.5rem;
+    width: 8rem;
+    z-index: 119;
+    background-size: cover;
   }
 }
