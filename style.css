@@ -78,12 +78,15 @@ img {
 }
 
 .mobile-nav-icons {
+  position: relative;
   float: right;
+  right: 54px;
 }
 
 .mobile-nav-icons .fas {
   font-size: 1.6rem;
   padding: 16px;
+  margin-right: 16px;
   border-left: 1px solid #eee;
 }
 
