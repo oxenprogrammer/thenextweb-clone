@@ -845,3 +845,44 @@ img {
     top: 0.2rem;
   }
 }
+
+/** media query for tablet (md) **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav-desktop {
+    display: block;
+  }
+
+  .top-menu {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .medium-logo {
+    background-image: url('./img/tnwlogo.png');
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    height: 6rem;
+    width: 8rem;
+    z-index: 120;
+  }
+
+  .top-menu-left {
+    padding-left: 9rem;
+  }
+
+  .top-menu .top-search {
+    padding-right: 12.5rem;
+  }
+
+  .top-nav .left-links {
+    padding-left: 8.5rem;
+  }
+
+  .top-nav .right-links {
+    padding-right: 11rem;
+  }
+}
