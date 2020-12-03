@@ -8,7 +8,7 @@
 
 ![screenshot](./Tablet.jpg)
 
-### Mobie version
+### Mobile version
 
 ![screenshot](./Mobile.jpg)
 
