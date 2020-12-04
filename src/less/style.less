@@ -1,6 +1,9 @@
 /** General rules */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Teko:wght@300;500&family=Ubuntu:wght@500&display=swap");
 
+/** variables **/
+@color: #f42;
+
 * {
   padding: 0;
   margin: 0;
@@ -94,7 +97,7 @@ img {
 }
 
 .mobile-nav-icons .fa-bars {
-  color: #f42;
+  color: @color;
 }
 
 .mobile-nav-icons .fa-search {
@@ -280,14 +283,14 @@ img {
 .technology-item h2 a {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
-  color: #f42;
+  color: @color;
   margin-bottom: 1.3rem;
 }
 
 .wrapper .orange-title {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
-  color: #f42;
+  color: @color;
   margin-bottom: 1.3rem;
 }
 
@@ -374,7 +377,7 @@ img {
 
 .story-article h4:hover {
   text-decoration: underline;
-  color: #f42;
+  color: @color;
 }
 
 .story-article ul {
@@ -457,7 +460,7 @@ img {
 
 .tech-item-article header {
   padding: 1rem;
-  color: #f42;
+  color: @color;
   background: #fff4f2;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
@@ -515,7 +518,7 @@ img {
 
 .styled-list li::before {
   content: "•";
-  color: #f42;
+  color: @color;
   position: relative;
   top: 2rem;
 }
@@ -576,7 +579,7 @@ img {
 }
 
 .funding-item .fund-item-titles {
-  background: #f42;
+  background: @color;
   color: #fff;
   padding: 1rem 1.5rem 1rem 7.5rem;
 }
@@ -636,7 +639,7 @@ img {
 }
 
 .latest-header span {
-  color: #f42;
+  color: @color;
 }
 
 .latest-header span:hover {
@@ -833,7 +836,7 @@ img {
 
   .latest-funding .funding-header .header-link:not(:last-child)::before {
     content: " |  ";
-    color: #f42;
+    color: @color;
   }
 
   .funding-container {
@@ -873,7 +876,7 @@ img {
   }
 
   .medium-logo {
-    background-image: url("./img/tnwlogo.png");
+    background-image: url("./../img/tnwlogo.png");
     position: absolute;
     top: 0;
     height: 6rem;
