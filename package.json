@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/oxenprogrammer/thenextweb-clone#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
     "less": "^3.12.2"
   }
 }
