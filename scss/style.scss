@@ -1,7 +1,4 @@
-@charset "UTF-8";
-
 /** General rules */
-
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Teko:wght@300;500&family=Ubuntu:wght@500&display=swap");
 
 * {
@@ -62,6 +59,18 @@ img {
   display: block;
 }
 
+/* SASS variables */
+
+$orange: #f42;
+$teko: "Teko", sans-serif;
+
+/* mixin */
+
+@mixin four-columns {
+  grid-template-columns: auto auto auto auto;
+  gap: 2rem;
+}
+
 /** nav mobile */
 
 .mobile-nav {
@@ -113,15 +122,14 @@ img {
 
 .nav-desktop {
   display: none;
+
+  @media only screen and (min-width: 1024px) {     // if device is wider than 1024px then switch to desktop navbar
+    display: block;
+  }
+
   width: 100%;
   top: 0;
   z-index: 10;
-}
-
-@media only screen and (min-width: 1024px) {
-  .nav-desktop {
-    display: block;
-  }
 }
 
 .nav-desktop .top-nav {
@@ -148,7 +156,7 @@ img {
   top: 0;
   justify-content: space-between;
   align-items: center;
-  font-family: "Teko", sans-serif;
+  font-family: $teko;
   font-size: 1.5rem;
   line-height: 3.5rem;
   color: #555;
@@ -231,7 +239,7 @@ img {
 
 .cover-item-title h2,
 .cover-item-title h5 {
-  font-family: "Teko", sans-serif;
+  font-family: $teko;
   font-size: 1.5rem;
   color: #fff;
 }
@@ -246,7 +254,7 @@ img {
 }
 
 .cover-item-title ul {
-  color: rgba(255, 255, 255, 0.6);
+  color: hsla(0, 0%, 100%, 0.6);
   font-size: 1.2rem;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5rem;
@@ -289,14 +297,14 @@ img {
 .technology-item h2 a {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
-  color: #f42;
+  color: $orange;
   margin-bottom: 1.3rem;
 }
 
 .wrapper .orange-title {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
-  color: #f42;
+  color: $orange;
   margin-bottom: 1.3rem;
 }
 
@@ -383,7 +391,7 @@ img {
 
 .story-article h4:hover {
   text-decoration: underline;
-  color: #f42;
+  color: $orange;
 }
 
 .story-article ul {
@@ -394,11 +402,11 @@ img {
 .tech-header li,
 .story-article li a {
   display: inline;
-  color: #5f5f5f;
+  color: rgb(95, 95, 95);
 }
 
 .story-article li a:hover {
-  color: #1f1d1d;
+  color: rgb(31, 29, 29);
 }
 
 /* Technology Container */
@@ -466,14 +474,14 @@ img {
 
 .tech-item-article header {
   padding: 1rem;
-  color: #f42;
+  color: $orange;
   background: #fff4f2;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
 }
 
 .tech-item-article .latest-title {
-  font-family: "Teko", sans-serif;
+  font-family: $teko;
 }
 
 .tech-item-article .sub-image {
@@ -483,6 +491,7 @@ img {
 }
 
 /* sub-images for tech item articles */
+
 .tech-item-article .num1 {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/stonksdorsey.jpg");
 }
@@ -520,9 +529,10 @@ img {
 }
 
 /* lists below each tech item article */
+
 .styled-list li::before {
   content: "•";
-  color: #f42;
+  color: $orange;
   position: relative;
   top: 2rem;
 }
@@ -541,6 +551,7 @@ img {
 }
 
 /* Latest funding */
+
 .latest-funding {
   font-size: 1.6rem;
   font-family: Helvetica, Arial, sans-serif;
@@ -582,7 +593,7 @@ img {
 }
 
 .funding-item .fund-item-titles {
-  background: #f42;
+  background: $orange;
   color: #fff;
   padding: 1rem 1.5rem 1rem 7.5rem;
 }
@@ -606,7 +617,7 @@ img {
 }
 
 .funding-item .funding-money h5 {
-  font-family: "Teko", sans-serif;
+  font-family: $teko;
   font-size: 1.5rem;
   font-weight: 300;
   color: #555;
@@ -642,7 +653,7 @@ img {
 }
 
 .latest-header span {
-  color: #f42;
+  color: $orange;
 }
 
 .latest-header span:hover {
@@ -650,6 +661,7 @@ img {
 }
 
 /* footer */
+
 .footer {
   width: 100%;
 }
@@ -694,7 +706,7 @@ img {
 
 .footer-menu li {
   padding: 0 1rem;
-  font-family: "Teko", sans-serif;
+  font-family: $teko;
   font-size: 1.7rem;
   font-weight: 300;
   color: #aaa;
@@ -733,6 +745,7 @@ img {
 }
 
 /** media query for desktop **/
+
 @media only screen and (min-width: 1024px) {
   .top-menu {
     display: flex;
@@ -748,6 +761,7 @@ img {
   }
 
   /* cover */
+
   .cover {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
@@ -757,7 +771,7 @@ img {
 
   .cover-one {
     grid-column: 1/3;
-    grid-row: 1/span 3;
+    grid-row: 1 / span 3;
   }
 
   .cover-one .date {
@@ -797,14 +811,15 @@ img {
   }
 
   /** wrapper */
+
   .wrapper {
     margin: 2rem 20rem;
   }
 
   /** latest **/
+
   .latest .latest-articles {
-    grid-template-columns: auto auto auto auto;
-    gap: 2rem;
+    @include four-columns;
   }
 
   .story {
@@ -818,6 +833,7 @@ img {
   }
 
   /** Funding **/
+
   .latest-funding .funding-header-links {
     flex-direction: row-reverse;
   }
@@ -834,13 +850,13 @@ img {
 
   .latest-funding .funding-header .header-link:not(:last-child)::before {
     content: " |  ";
-    color: #f42;
+    color: $orange;
   }
 
   .funding-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 2rem;
+
+    @include four-columns;
   }
 
   .funding-container .last-funding-item {
@@ -919,7 +935,7 @@ img {
 
   .cover-one {
     grid-column: 1/3;
-    grid-row: 1/span 3;
+    grid-row: 1 / span 3;
   }
 
   .cover-one .date {
@@ -949,6 +965,7 @@ img {
   }
 
   /** latest **/
+
   .latest .latest-articles {
     grid-template-columns: auto auto auto;
     gap: 2rem;
@@ -972,10 +989,9 @@ img {
   }
 
   /** Technology Container ***/
+
   .technology-container {
     grid-template-columns: auto auto;
     gap: 2rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
