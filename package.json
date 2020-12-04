@@ -1,0 +1,31 @@
+{
+  "name": "thenextweb-clone",
+  "version": "1.0.1",
+  "description": "thenextweb-clone",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oxenprogrammer/thenextweb-clone.git"
+  },
+  "keywords": [
+    "clone",
+    "web",
+    "responsive",
+    "design"
+  ],
+  "author": "aliciapaz oxenprogrammer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oxenprogrammer/thenextweb-clone/issues"
+  },
+  "homepage": "https://github.com/oxenprogrammer/thenextweb-clone#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
+    "less": "^3.12.2"
+  }
+}
