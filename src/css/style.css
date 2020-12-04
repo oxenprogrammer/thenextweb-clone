@@ -1,38 +1,43 @@
 /** General rules */
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHvxk.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHvxk.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50Xew8.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50Xew8.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Teko';
+  font-family: "Teko";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/teko/v10/LYjCdG7kmE0gdQhfgCM.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/teko/v10/LYjCdG7kmE0gdQhfgCM.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Teko';
+  font-family: "Teko";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/teko/v10/LYjCdG7kmE0gdVBegCM.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/teko/v10/LYjCdG7kmE0gdVBegCM.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoCjC3Ttw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoCjC3Ttw.ttf)
+    format("truetype");
 }
 * {
   padding: 0;
@@ -657,7 +662,10 @@ img {
   }
   .cover-one .cover-gradient {
     height: 448px;
-    background-image: linear-gradient(rgba(235, 15, 15, 0.842), rgba(0, 0, 0, 0.952));
+    background-image: linear-gradient(
+      rgba(235, 15, 15, 0.842),
+      rgba(0, 0, 0, 0.952)
+    );
   }
   .cover-one .article-title {
     font-size: 4rem;
@@ -784,7 +792,10 @@ img {
   }
   .cover-one .cover-gradient {
     height: 448px;
-    background-image: linear-gradient(rgba(235, 15, 15, 0.842), rgba(0, 0, 0, 0.952));
+    background-image: linear-gradient(
+      rgba(235, 15, 15, 0.842),
+      rgba(0, 0, 0, 0.952)
+    );
   }
   .cover-one .article-title {
     font-size: 4rem;
